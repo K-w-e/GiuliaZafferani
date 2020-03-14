@@ -1,0 +1,42 @@
+body{
+    font-size: 24px;
+    overflow-x: hidden;
+}
+
+.about{
+    padding-bottom: 100px;
+}
+
+
+
+.row{
+    position: absolute;
+}
+
+.first{
+    position: sticky;
+    top: 10;
+}
+
+.second{
+    position: sticky;
+    top: 10;
+}
+
+hr{
+    border: 1px solid;
+}
+
+a, a:hover{
+    color: black;
+}
+
+li{
+    position: relative;
+    left: 0;
+    transition: left ease 0.5s;
+}
+
+li:hover {
+    left: -30px;
+}
