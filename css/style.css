@@ -33,6 +33,7 @@ a, a:hover{
 
 li{
     position: relative;
+    text-align: right;
     left: 0;
     transition: left ease 0.5s;
 }
