@@ -1,3 +1,27 @@
+function start(){
+    document.getElementById('Box').style.display = "";
+    document.getElementById('Contact').style.display = "none";
+    document.getElementById('Info').style.display = "none";
+    var content = "<p>SELECTED WORKS</p>"
+    +
+    "<img src="+"http://placekitten.com/200/300"+"><br>"
+    +
+    "<p>Meow</p>"
+    +
+    "<img src="+"http://placekitten.com/300/300"+"><br>"
+    +
+    "<p>Mlem</p>"
+    +
+    "<img src="+"http://placekitten.com/300/200"+"><br>"
+    +
+    "<p>Prew</p>"
+    +
+    "<img src="+"http://placekitten.com/500/300"+"><br>"
+    +
+    "<p>Meow</p>"
+    document.getElementById('Box').innerHTML = content;
+}
+
 function info(){
     document.getElementById('Box').style.display = "none";
     document.getElementById('Contact').style.display = "none";

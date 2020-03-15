@@ -5,6 +5,18 @@ body::-webkit-scrollbar {
 body{
     font-size: 20px;
     font-family: Helvetica;
+    line-height: 26px;
+}
+
+img{
+    width: 100%;
+}
+
+#title{
+    z-index: 2;
+    position: fixed;
+    padding: 30px;
+    width: 100%;
 }
 
 .col{
@@ -21,12 +33,12 @@ body{
 
 .first{
     position: sticky;
-    top: 10;
+    top: 80;
 }
 
 .second{
     position: sticky;
-    top: 10;
+    top: 80;
 }
 
 hr{
@@ -55,4 +67,16 @@ li:hover {
     padding-left: 30px;
     padding-bottom: 10px;
     font-size: 12px;
+}
+
+.box{
+    padding-top: 30px;
+}
+
+.subtitle{
+    margin-bottom: 0px;
+}
+
+hr{
+    margin: 0px;
 }
