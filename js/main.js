@@ -22,7 +22,10 @@ function show2() {
     document.getElementById('Box').style.display = "";
     document.getElementById('Info').style.display = "none";
     document.getElementById('Contact').style.display = "none";
-    var content = "<img src="+"https://cataas.com/cat"+"><p>:3</p>";
+    var content = "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sed natus aspernatur minus, debitis doloribus enim ducimus aperiam voluptas repellendus quidem culpa molestias laborum, soluta porro quos in. Ex, quibusdam.</p>" 
+
+    +
+    "<img src="+"https://cataas.com/cat"+"><p>:3</p>";
     document.getElementById('Box').innerHTML = content;
 }
 
@@ -33,5 +36,15 @@ function show3() {
     var content = "<img src="+"https://cataas.com/cat/says/hello"+"><p>Miao</p>"
     +
     "<img src="+"https://cataas.com/cat/says/hello"+">";
+    document.getElementById('Box').innerHTML = content;
+}
+
+function show4() {
+    document.getElementById('Box').style.display = "";
+    document.getElementById('Info').style.display = "none";
+    document.getElementById('Contact').style.display = "none";
+    var content = "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sed natus aspernatur minus, debitis doloribus enim ducimus aperiam voluptas repellendus quidem culpa molestias laborum, soluta porro quos in. Ex, quibusdam.</p>" 
+    +
+    "<img src="+"http://placekitten.com/500/500"+">";
     document.getElementById('Box').innerHTML = content;
 }
