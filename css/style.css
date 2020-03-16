@@ -4,30 +4,18 @@ body::-webkit-scrollbar {
   
   /* Larghezza minima (SMARTPHONE) */
   @media screen and (min-width: 375px) {
-    .second{
-        position: static;
-        top: 0;
-    }
-
-    .first{
-        position: static;
-        top: 0;
-    }
-  }
-
-  /* Larghezza SUPERIORE a smartphone (TABLET) */
-  @media screen and (min-width: 780px) {
-    .first{
-        position: static;
+    body{
+        font-size: 3.5vw !important;
+        line-height: 35px !important;
     }
 
     .second{
         display: none;
     }
 
-    #title{
+    .first{
         position: static;
-        padding: 15px;
+        top: 0;
     }
 
     #btn{
@@ -36,11 +24,41 @@ body::-webkit-scrollbar {
         right: 0;
     }
 
+    #title{
+        position: static;
+        padding: 15px;
+    }
+  }
 
+  /* Larghezza SUPERIORE a smartphone (TABLET) */
+  @media screen and (min-width: 768px) {
+    body{
+        font-size: 3.5vw !important;
+        line-height: 35px !important;
+    }
+
+    .first{
+        position: static;
+    }
+
+    
+
+    
+
+    
   }
 
   /* Larghezza SUPERIORE a tablet (PC) */
-  @media screen and (min-width: 990px) {   
+  @media screen and (min-width: 990px) { 
+    body{
+        font-size: 1.6vw !important;
+        line-height: 35px !important;
+    }
+
+    #btn{
+        display: none;
+    }  
+    
     .col{
         padding-left: 30px;
     }
@@ -71,6 +89,7 @@ body::-webkit-scrollbar {
         padding-left: 30px;
         padding-bottom: 10px;
         font-size: 12px;
+        line-height: normal;
     }
 
     .box{
@@ -81,19 +100,13 @@ body::-webkit-scrollbar {
         z-index: 2;
         position: fixed;
         padding: 30px;
-        width: 100%;
     }
 
 }
 
-
-
 body{
-    font-size: 20px;
     font-family: Helvetica;
-    line-height: 26px;
 }
-
 
 img{
     width: 100%;

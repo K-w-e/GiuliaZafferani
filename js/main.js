@@ -20,19 +20,24 @@ function start(){
     +
     "<p>Meow</p>"
     document.getElementById('Box').innerHTML = content;
+
+    closeNav();
 }
 
 function info(){
     document.getElementById('Box').style.display = "none";
     document.getElementById('Contact').style.display = "none";
     document.getElementById('Info').style.display = "";
+
+    closeNav();
 }
 
 function contact(){
     document.getElementById('Box').style.display = "none";
     document.getElementById('Info').style.display = "none";
-    document.getElementById('Contact').style.display = "none";
     document.getElementById('Contact').style.display = "";
+
+    closeNav();
 }
 
 function show(param_div_id) {
@@ -40,6 +45,8 @@ function show(param_div_id) {
     document.getElementById('Info').style.display = "none";
     document.getElementById('Contact').style.display = "none";
     document.getElementById('Box').innerHTML = document.getElementById(param_div_id).innerHTML;
+
+    closeNav();
 }
 
 function show2() {
@@ -51,6 +58,8 @@ function show2() {
     +
     "<img src="+"https://cataas.com/cat"+"><p>:3</p>";
     document.getElementById('Box').innerHTML = content;
+
+    closeNav();
 }
 
 function show3() {
@@ -61,6 +70,8 @@ function show3() {
     +
     "<img src="+"https://cataas.com/cat/says/hello"+">";
     document.getElementById('Box').innerHTML = content;
+
+    closeNav();
 }
 
 function show4() {
@@ -71,4 +82,14 @@ function show4() {
     +
     "<img src="+"http://placekitten.com/500/500"+">";
     document.getElementById('Box').innerHTML = content;
+
+    closeNav();
 }
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
