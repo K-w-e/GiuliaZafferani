@@ -1,0 +1,52 @@
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 60px;
+  }
+  
+  #myNav{
+    z-index: 3;
+}
+
+    .overlay-content li{
+        margin-left: 30px;
+    }
+
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

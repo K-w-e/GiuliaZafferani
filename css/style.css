@@ -1,6 +1,92 @@
 body::-webkit-scrollbar {
     display: none;
   }
+  
+  /* Larghezza minima (SMARTPHONE) */
+  @media screen and (min-width: 375px) {
+    .second{
+        position: static;
+        top: 0;
+    }
+
+    .first{
+        position: static;
+        top: 0;
+    }
+  }
+
+  /* Larghezza SUPERIORE a smartphone (TABLET) */
+  @media screen and (min-width: 780px) {
+    .first{
+        position: static;
+    }
+
+    .second{
+        display: none;
+    }
+
+    #title{
+        position: static;
+        padding: 15px;
+    }
+
+    #btn{
+        padding: 15px;
+        position: absolute;
+        right: 0;
+    }
+
+
+  }
+
+  /* Larghezza SUPERIORE a tablet (PC) */
+  @media screen and (min-width: 990px) {   
+    .col{
+        padding-left: 30px;
+    }
+
+    .about{
+        padding-bottom: 100px;
+    }
+
+    .row{
+        position: absolute;
+    }
+
+    .first{
+        position: sticky;
+        top: 80;
+    }
+
+    .second{
+        position: sticky;
+        top: 80;
+        display: block;
+    }
+
+    #footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .box{
+        padding-top: 15px;
+    }
+
+    #title{
+        z-index: 2;
+        position: fixed;
+        padding: 30px;
+        width: 100%;
+    }
+
+}
+
+
 
 body{
     font-size: 20px;
@@ -8,37 +94,27 @@ body{
     line-height: 26px;
 }
 
+
 img{
     width: 100%;
 }
 
-#title{
-    z-index: 2;
-    position: fixed;
-    padding: 30px;
-    width: 100%;
+.subtitle{
+    margin-bottom: 0px;
 }
 
-.col{
-    padding-left: 30px;
+hr{
+    margin: 0px;
 }
 
-.about{
-    padding-bottom: 100px;
+li{
+    position: relative;
+    left: 0;
+    transition: left ease 0.5s;
 }
 
-.row{
-    position: absolute;
-}
-
-.first{
-    position: sticky;
-    top: 80;
-}
-
-.second{
-    position: sticky;
-    top: 80;
+li:hover {
+    left: -30px;
 }
 
 hr{
@@ -49,34 +125,13 @@ a, a:hover{
     color: black;
 }
 
-li{
-    position: relative;
-    text-align: right;
-    left: 0;
-    transition: left ease 0.5s;
-}
 
-li:hover {
-    left: -30px;
-}
 
-#footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    padding-left: 30px;
-    padding-bottom: 10px;
-    font-size: 12px;
-}
 
-.box{
-    padding-top: 30px;
-}
 
-.subtitle{
-    margin-bottom: 0px;
-}
 
-hr{
-    margin: 0px;
-}
+
+
+
+
+
