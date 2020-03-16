@@ -3,7 +3,7 @@ body::-webkit-scrollbar {
   }
   
   /* Larghezza minima (SMARTPHONE) */
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 120px) {
     body{
         font-size: 3.5vw !important;
         line-height: 35px !important;
@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
         display: none;
     }  
     
-    .col{
+    .colonna{
         padding-left: 30px;
     }
 
