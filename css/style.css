@@ -5,8 +5,21 @@ body::-webkit-scrollbar {
   /* Larghezza minima (SMARTPHONE) */
   @media screen and (min-width: 120px) {
     body{
-        font-size: 3.5vw !important;
+        font-size: 4vw !important;  /* ?? */
         line-height: 35px !important;
+        display:flex; 
+        flex-direction:column; 
+    }
+
+    #footer{
+        left: 15;
+        bottom: 10;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        font-size: 2.5vw;
+        line-height: normal;
+
+        margin-top:auto; 
     }
 
     .second{
@@ -28,24 +41,22 @@ body::-webkit-scrollbar {
         position: static;
         padding: 15px;
     }
+
+    img{
+        width: 98%;
+    }
   }
 
   /* Larghezza SUPERIORE a smartphone (TABLET) */
   @media screen and (min-width: 768px) {
     body{
-        font-size: 3.5vw !important;
-        line-height: 35px !important;
+        font-size: 4vw !important;
+        line-height: 40px !important;
     }
 
     .first{
         position: static;
     }
-
-    
-
-    
-
-    
   }
 
   /* Larghezza SUPERIORE a tablet (PC) */
@@ -53,6 +64,10 @@ body::-webkit-scrollbar {
     body{
         font-size: 1.6vw !important;
         line-height: 35px !important;
+    }
+
+    img{
+        width: 95%;
     }
 
     #btn{
@@ -67,10 +82,6 @@ body::-webkit-scrollbar {
         padding-bottom: 100px;
     }
 
-    .row{
-        position: absolute;
-    }
-
     .first{
         position: sticky;
         top: 80;
@@ -80,6 +91,17 @@ body::-webkit-scrollbar {
         position: sticky;
         top: 80;
         display: block;
+    } 
+
+    .box{
+        margin-top: 15px;
+        padding-right: 15px;
+    }
+
+    #title{
+        z-index: 2;
+        position: fixed;
+        padding: 30px;
     }
 
     #footer{
@@ -92,24 +114,10 @@ body::-webkit-scrollbar {
         line-height: normal;
     }
 
-    .box{
-        padding-top: 15px;
-    }
-
-    #title{
-        z-index: 2;
-        position: fixed;
-        padding: 30px;
-    }
-
 }
 
 body{
     font-family: Helvetica;
-}
-
-img{
-    width: 100%;
 }
 
 .subtitle{
@@ -137,6 +145,8 @@ hr{
 a, a:hover{
     color: black;
 }
+
+
 
 
 

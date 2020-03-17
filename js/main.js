@@ -54,7 +54,6 @@ function show2() {
     document.getElementById('Info').style.display = "none";
     document.getElementById('Contact').style.display = "none";
     var content = "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sed natus aspernatur minus, debitis doloribus enim ducimus aperiam voluptas repellendus quidem culpa molestias laborum, soluta porro quos in. Ex, quibusdam.</p>" 
-
     +
     "<img src="+"https://cataas.com/cat"+"><p>:3</p>";
     document.getElementById('Box').innerHTML = content;
