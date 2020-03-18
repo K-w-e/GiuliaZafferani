@@ -1,12 +1,30 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+
 body::-webkit-scrollbar {
     display: none;
   }
+
+
+    .immagineprogetto{
+        margin-bottom: 15px;
+    }
+
+    .testoprogetto{
+        font-weight: 300;
+        margin-top: 15px;
+        padding-right: 15px;
+    }
   
   /* Larghezza minima (SMARTPHONE) */
   @media screen and (min-width: 120px) {
     body{
         font-size: 4vw !important;  /* ?? */
-        line-height: 35px !important;
+        line-height: 130% !important;
         display:flex; 
         flex-direction:column; 
     }
@@ -38,8 +56,25 @@ body::-webkit-scrollbar {
     }
 
     #title{
+        font-family: 'Inter var', sans-serif;
+        font-variation-settings: "wght" 500;
+        transition: 2s;
         position: static;
         padding: 15px;
+    }
+
+    #title:hover{
+    font-variation-settings: "wght" 900;
+    transition: 0.5s;
+    text-decoration: none;
+    }
+
+    #Info{
+        font-weight: 300;
+    }
+
+    #Contact{
+        font-weight: 300;
     }
 
     img{
@@ -51,7 +86,7 @@ body::-webkit-scrollbar {
   @media screen and (min-width: 768px) {
     body{
         font-size: 4vw !important;
-        line-height: 40px !important;
+        line-height: 130% !important;
     }
 
     .first{
@@ -62,8 +97,8 @@ body::-webkit-scrollbar {
   /* Larghezza SUPERIORE a tablet (PC) */
   @media screen and (min-width: 990px) { 
     body{
-        font-size: 1.6vw !important;
-        line-height: 35px !important;
+        font-size: 1.4vw !important;
+        line-height: 130% !important;
     }
 
     img{
@@ -117,7 +152,8 @@ body::-webkit-scrollbar {
 }
 
 body{
-    font-family: Helvetica;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
 }
 
 .subtitle{
