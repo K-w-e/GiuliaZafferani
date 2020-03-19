@@ -164,13 +164,18 @@ hr{
     margin: 0px;
 }
 
-li{
+.link{
     position: relative;
     left: 0;
-    transition: left ease 0.5s;
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 
-li:hover {
+.link:hover {
     left: -30px;
 }
 
@@ -181,6 +186,12 @@ hr{
 a, a:hover{
     color: black;
 }
+
+.clicked{
+    position: relative;
+    left: -30px;
+}
+
 
 
 
