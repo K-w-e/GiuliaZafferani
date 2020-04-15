@@ -28,6 +28,10 @@
         margin-top: 15px;
         padding-right: 15px;
     }
+
+    .row{
+        height: 100vh;
+    }
   
   /* Larghezza minima (SMARTPHONE) */
   @media screen and (min-width: 120px) {
@@ -209,9 +213,13 @@ a, a:hover{
     left: -30px;
 }
 
-.thirdColumn{
+#thirdColumn{
+    margin-top: 0px;
+    padding-top: 15px;
     background-color: white;
 }
+
+
 
 
 

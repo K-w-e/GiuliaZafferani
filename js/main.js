@@ -32,7 +32,7 @@ function info(){
     document.getElementById('btnInfo').classList.add("clicked");
 
 
-    //thirdColumnColor();
+    thirdColumnBlack();
     closeNav();
 }
 
@@ -44,6 +44,7 @@ function contact(){
     document.getElementById('Contact').style.display = "";
     document.getElementById('btnContact').classList.add("clicked");
 
+    thirdColumnBlack();
     closeNav();
 }
 
@@ -80,6 +81,7 @@ function show1() {
     ;
     document.getElementById('Box').innerHTML = content;
 
+    thirdColumnWhite();
     closeNav();
 }
 
@@ -96,6 +98,7 @@ function show2() {
     "<img src="+"https://cataas.com/cat"+"><p>:3</p>";
     document.getElementById('Box').innerHTML = content;
 
+    thirdColumnWhite();
     closeNav();
 }
 
@@ -112,6 +115,7 @@ function show3() {
     "<img src="+"https://cataas.com/cat/says/hello"+">";
     document.getElementById('Box').innerHTML = content;
 
+    thirdColumnWhite();
     closeNav();
 }
 
@@ -128,6 +132,7 @@ function show4() {
     "<img src="+"http://placekitten.com/500/500"+">";
     document.getElementById('Box').innerHTML = content;
 
+    thirdColumnWhite();
     closeNav();
 }
 
@@ -139,12 +144,14 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
 
-function thirdColumnColor() {
-    var x = document.getElementById("thirdColumn").style.backgroundColor = "black";
-    x.style.height = "100%";
-    if (x.style.backgroundColor === "white") {
-        x.style.backgroundColor = "black";
-      } else {
-        x.style.backgroundColor = "white";
-      }
+function thirdColumnBlack() {
+    var x = document.getElementById("thirdColumn");
+    x.style.color = 'white';
+    x.style.backgroundColor = "black";
+}
+
+function thirdColumnWhite() {
+    var x = document.getElementById("thirdColumn");
+    x.style.backgroundColor = "white";
+    x.style.color = "black";
 }
