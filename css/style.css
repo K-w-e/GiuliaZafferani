@@ -1,14 +1,23 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
-}
+    @import url('https://rsms.me/inter/inter.css');
+    html { font-family: 'Inter', sans-serif; }
+    @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+    }
 
 
-body::-webkit-scrollbar {
-    display: none;
-  }
+    body::-webkit-scrollbar {
+        display: none;
+    }
 
+    .titoloprogetto{
+        font-weight: 900;
+        font-size: 1.8vw;
+    }
+
+    .sottotitoloprogetto{
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
 
     .immagineprogetto{
         margin-bottom: 15px;
@@ -101,6 +110,14 @@ body::-webkit-scrollbar {
         line-height: 130% !important;
     }
 
+    .title{
+        font-size: 1.8vw;
+    }
+
+    .subtitle{
+        font-size: 1.6vw;
+    }
+
     img{
         width: 95%;
     }
@@ -156,7 +173,7 @@ body{
     font-weight: 500;
 }
 
-.subtitle{
+.midTitle{
     margin-bottom: 0px;
 }
 
@@ -190,6 +207,10 @@ a, a:hover{
 .clicked{
     position: relative;
     left: -30px;
+}
+
+.thirdColumn{
+    background-color: white;
 }
 
 

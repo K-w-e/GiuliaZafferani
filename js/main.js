@@ -31,6 +31,8 @@ function info(){
     document.getElementById('Info').style.display = "";
     document.getElementById('btnInfo').classList.add("clicked");
 
+
+    //thirdColumnColor();
     closeNav();
 }
 
@@ -53,7 +55,11 @@ function show1() {
     document.getElementById('Contact').style.display = "none";
     document.getElementById('firstProj').classList.add("clicked");
 
-    var content = "<p class="+"testoprogetto"+">Knowledge must be shared. That is the philosophy from which Fontamara magazine was born. The magazine collects in a box the main themes of the myth of Plato's Cave, from the language creation to the value of culture and critical thinking. There's also a part about a distorted view of the world with themes like the alien invasion or the global cooling and a retrospective of Mostro Graphic Design Camp, where the magazine was exposed.</p>" 
+    var content = "<p class="+"titoloprogetto"+">Titolo :)<p>"
+    +
+    "<p class="+"sottotitoloprogetto"+">Sottotitolo qui<p>"
+    +
+    "<p class="+"testoprogetto"+">Knowledge must be shared. That is the philosophy from which Fontamara magazine was born. The magazine collects in a box the main themes of the myth of Plato's Cave, from the language creation to the value of culture and critical thinking. There's also a part about a distorted view of the world with themes like the alien invasion or the global cooling and a retrospective of Mostro Graphic Design Camp, where the magazine was exposed.</p>" 
     +
     "<img class="+"immagineprogetto"+" src="+"./img/fontamara/Fontamara_01.jpg"+">"
     +
@@ -129,6 +135,16 @@ function openNav() {
     document.getElementById("myNav").style.width = "100%";
   }
   
-  function closeNav() {
+function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
+
+function thirdColumnColor() {
+    var x = document.getElementById("thirdColumn").style.backgroundColor = "black";
+    x.style.height = "100%";
+    if (x.style.backgroundColor === "white") {
+        x.style.backgroundColor = "black";
+      } else {
+        x.style.backgroundColor = "white";
+      }
+}
