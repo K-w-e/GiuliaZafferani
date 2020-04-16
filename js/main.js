@@ -21,6 +21,7 @@ function start(){
     "<p>Meow</p>"
     document.getElementById('Box').innerHTML = content;
 
+    thirdColumnWhite();
     closeNav();
 }
 
@@ -32,19 +33,24 @@ function info(){
     document.getElementById('btnInfo').classList.add("clicked");
 
 
-    thirdColumnBlack();
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+        blackMobile();
+    else
+        thirdColumnBlack();
     closeNav();
 }
 
 function contact(){
     $(".clicked").removeClass("clicked");
-
     document.getElementById('Box').style.display = "none";
     document.getElementById('Info').style.display = "none";
     document.getElementById('Contact').style.display = "";
     document.getElementById('btnContact').classList.add("clicked");
 
-    thirdColumnBlack();
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+        blackMobile();
+    else
+        thirdColumnBlack();
     closeNav();
 }
 
@@ -62,13 +68,25 @@ function show1() {
     +
     "<p class="+"testoprogetto"+">Knowledge must be shared. That is the philosophy from which Fontamara magazine was born. The magazine collects in a box the main themes of the myth of Plato's Cave, from the language creation to the value of culture and critical thinking. There's also a part about a distorted view of the world with themes like the alien invasion or the global cooling and a retrospective of Mostro Graphic Design Camp, where the magazine was exposed.</p>" 
     +
-    "<img class="+"immagineprogetto"+" src="+"./img/fontamara/Fontamara_01.jpg"+">"
+    "<a href="+"./img/fontamara/Fontamara_01.jpg"+" data-lightbox="+"nomeGalleria"+">"
+        +"<img src="+"./img/fontamara/Fontamara_01.jpg"+">"+   
+    "</a>"
     +
-    "<img class="+"immagineprogetto"+" src="+"./img/fontamara/Fontamara_02.jpg"+">"
+    "<a href="+"./img/fontamara/Fontamara_02.jpg"+" data-lightbox="+"nomeGalleria"+">"
+        +"<img src="+"./img/fontamara/Fontamara_02.jpg"+">"+   
+    "</a>"
     +
-    "<img class="+"immagineprogetto"+" src="+"./img/fontamara/Fontamara_03.jpg"+">"
+    "<a href="+"./img/fontamara/Fontamara_03.jpg"+" data-lightbox="+"nomeGalleria"+">"
+        +"<img src="+"./img/fontamara/Fontamara_03.jpg"+">"+   
+    "</a>"
     +
-    "<img class="+"immagineprogetto"+" src="+"./img/fontamara/Fontamara_04.jpg"+">"
+    "<a href="+"./img/fontamara/Fontamara_04.jpg"+" data-lightbox="+"nomeGalleria"+">"
+        +"<img src="+"./img/fontamara/Fontamara_04.jpg"+">"+   
+    "</a>"
+    +
+    "<a href="+"./img/fontamara/Fontamara_05.jpg"+" data-lightbox="+"nomeGalleria"+">"
+        +"<img src="+"./img/fontamara/Fontamara_05.jpg"+">"+   
+    "</a>"
     +
     "<img class="+"immagineprogetto"+" src="+"./img/fontamara/Fontamara_05.jpg"+">"
     +
@@ -77,7 +95,6 @@ function show1() {
     "<img class="+"immagineprogetto"+" src="+"./img/fontamara/Fontamara_07.jpg"+">"
     +
     "<img class="+"immagineprogetto"+" src="+"./img/fontamara/Fontamara_08.jpg"+">"
-
     ;
     document.getElementById('Box').innerHTML = content;
 
@@ -138,20 +155,40 @@ function show4() {
 
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
-  }
+}
   
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-  }
+}
 
 function thirdColumnBlack() {
     var x = document.getElementById("thirdColumn");
+    x.style.height = "100vh";
     x.style.color = 'white';
     x.style.backgroundColor = "black";
+    
 }
 
 function thirdColumnWhite() {
     var x = document.getElementById("thirdColumn");
+    var y = document.getElementById("footer");
+    x.style.height = "";
     x.style.backgroundColor = "white";
     x.style.color = "black";
+}
+
+function blackMobile() {
+    var footer = document.getElementById("footer"); 
+    var topBox = document.getElementById("firstColumn");
+    var margin = topBox.offsetHeight+(footer.offsetHeight*1.8); 
+    var calc = window.innerHeight-margin;
+    var x = document.getElementById("thirdColumn");
+    x.style.height = calc;
+    x.style.color = 'white';
+    x.style.backgroundColor = "black";
+    var y = document.getElementById("footer");
+    y.style.color = "white";
+    y.style.backgroundColor = "black";
+    var l = document.getElementById("aLink");
+    l.style.color = "white";
 }

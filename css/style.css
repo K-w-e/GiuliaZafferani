@@ -4,18 +4,15 @@
     html { font-family: 'Inter var', sans-serif; }
     }
 
-
     body::-webkit-scrollbar {
         display: none;
     }
 
     .titoloprogetto{
         font-weight: 900;
-        font-size: 1.8vw;
     }
 
     .sottotitoloprogetto{
-        font-size: 1.5vw;
         font-weight: 500;
     }
 
@@ -27,10 +24,6 @@
         font-weight: 300;
         margin-top: 15px;
         padding-right: 15px;
-    }
-
-    .row{
-        height: 100vh;
     }
   
   /* Larghezza minima (SMARTPHONE) */
@@ -82,17 +75,17 @@
     text-decoration: none;
     }
 
-    #Info{
-        font-weight: 300;
-    }
-
-    #Contact{
+    #Info, #Contact{
         font-weight: 300;
     }
 
     img{
         width: 98%;
     }
+
+    /*.thirdColumn{
+        padding-bottom: 30px;
+    }*/
   }
 
   /* Larghezza SUPERIORE a smartphone (TABLET) */
@@ -141,6 +134,7 @@
     .first{
         position: sticky;
         top: 80;
+        display: block;
     }
 
     .second{
@@ -169,7 +163,6 @@
         font-size: 12px;
         line-height: normal;
     }
-
 }
 
 body{

@@ -7,15 +7,16 @@
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css?ts=<?=time()?>&quot">
       <link rel="stylesheet" href="css/menu.css?ts=<?=time()?>&quot">
+      <link rel="stylesheet" href="css/lightbox.min.css" type="text/css">
 
-      <script src="js/main.js"></script>
+      <script src="js/main.js?ts=<?=time()?>&quot"></script>
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   </head>
   
   <body>
     <!--Side menu-->
     <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#8592;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 80px;">&#8592;</a>
       <div class="overlay-content">
           <p>ABOUT</p>
           <hr>
@@ -42,10 +43,10 @@
     <div class="col-12">
       <div class="row">
         <a href="#" id="title" onclick="start()">GIULIA ZAFFERANI</a>
-        <span id="btn" onclick="openNav()" style="font-size: 56px;">+</span> 
+        <span id="btn" onclick="openNav()" style="font-size: 90px;">+</span> 
 
         <!-- First column -->
-        <div class="col-sm-12 col-md-12 col-lg-3 colonna">
+        <div class="col-sm-12 col-md-12 col-lg-3 colonna" id="firstColumn">
           <div class="first">               
             <p>
               Hi everyone! <br>
@@ -90,15 +91,15 @@
 
 
         <!-- Third column -->
-        <div class="col-sm-12 col-md-12 col-lg-6 colonna box" style="padding-right: 0px;" id="thirdColumn">
+        <div class="col-sm-12 col-md-12 col-lg-6 colonna box thirdColumn" style="padding-right: 0px;" id="thirdColumn">
           <div id="Box" class="box" style="padding-right: 0px;">
             <p>SELECTED WORKS</p>
-            <img src="http://placekitten.com/200/300"><br>
-            <p>Meow</p>
-            <img src="http://placekitten.com/300/300"><br>
-            <p>Mlem</p>
-            <img src="http://placekitten.com/300/200"><br>
-            <p>Prew</p>
+            <a href="http://placekitten.com/200/300" data-lightbox="roadtrip"><img src="http://placekitten.com/200/300"></a>
+            <br><p>Meow</p>
+            <a href="http://placekitten.com/300/300" data-lightbox="roadtrip"><img src="http://placekitten.com/300/300"></a>
+            <br><p>Mlem</p>
+            <a href="http://placekitten.com/300/200" data-lightbox="roadtrip"><img src="http://placekitten.com/300/200"></a>
+            <br><p>Prew</p>
             <img src="http://placekitten.com/500/300"><br>
             <p>Meow</p>
             <img src="http://placekitten.com/300/400"><br>
@@ -126,7 +127,7 @@
             &#8594; 2017 / Photography workshop with Patrizia Ferreri<br>
 
           </div>
-          <div id="Contact" style="display: none;" class="box"> 
+          <div id="Contact" style="display: none;" class="box" style="padding: 100px;"> 
             E-MAIL<br>
             &#8594; giulia.zafferani177@gmail.com <br>
             &#8594; giulia.zafferani177@gmail.com <br><br>
@@ -138,18 +139,16 @@
           </div>
   
         </div>
-
-      <!--No-->
-      <div id="idPrimoProg" style="display: none;" class="col-md-6">
-        <img src="https://cataas.com/cat/cute">
-      </div>  
     </div>
         
   </div>
-     <!--Footer-->
-     <div id="footer">
+    <!--Footer-->
+    <div id="footer">
       Lorem ipsum <br>
-      <a href="https://alessandro-guerra.it">Website built by Alessandro Guerra</a>
+      <a href="https://alessandro-guerra.it" id="aLink">Website built by Alessandro Guerra</a>
     </div>
+
+
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>
