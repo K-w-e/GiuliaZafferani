@@ -97,7 +97,11 @@ function show1() {
     "<img class="+"immagineprogetto"+" src="+"./img/fontamara/Fontamara_08.jpg"+">"
     ;
     document.getElementById('Box').innerHTML = content;
-
+    var y = document.getElementById("footer");
+    y.style.color = "black";
+    y.style.backgroundColor = "white";
+    var l = document.getElementById("aLink");
+    l.style.color = "black";
     thirdColumnWhite();
     closeNav();
 }
@@ -115,6 +119,12 @@ function show2() {
     "<img src="+"https://cataas.com/cat"+"><p>:3</p>";
     document.getElementById('Box').innerHTML = content;
 
+
+    var y = document.getElementById("footer");
+    y.style.color = "black";
+    y.style.backgroundColor = "white";
+    var l = document.getElementById("aLink");
+    l.style.color = "black";
     thirdColumnWhite();
     closeNav();
 }
@@ -132,6 +142,12 @@ function show3() {
     "<img src="+"https://cataas.com/cat/says/hello"+">";
     document.getElementById('Box').innerHTML = content;
 
+
+    var y = document.getElementById("footer");
+    y.style.color = "black";
+    y.style.backgroundColor = "white";
+    var l = document.getElementById("aLink");
+    l.style.color = "black";
     thirdColumnWhite();
     closeNav();
 }
@@ -149,6 +165,12 @@ function show4() {
     "<img src="+"http://placekitten.com/500/500"+">";
     document.getElementById('Box').innerHTML = content;
 
+
+    var y = document.getElementById("footer");
+    y.style.color = "black";
+    y.style.backgroundColor = "white";
+    var l = document.getElementById("aLink");
+    l.style.color = "black";
     thirdColumnWhite();
     closeNav();
 }
