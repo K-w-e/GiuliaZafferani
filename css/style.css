@@ -138,15 +138,17 @@
     }
 
     .first{
-        position: sticky;
-        top: 80;
+        position: sticky;     
+        top: 0;
         display: block;
+        padding-top: 80px;
     }
 
     .second{
         position: sticky;
-        top: 80;
+        top: 0;
         display: block;
+        padding-top: 80px;
     } 
 
     .box{

@@ -10641,12 +10641,12 @@ return jQuery;
   // http://lokeshdhakar.com/projects/lightbox2/index.html#options
   Lightbox.defaults = {
     albumLabel: '',	//Label testo qui
-    alwaysShowNavOnTouchDevices: false,
+    alwaysShowNavOnTouchDevices: true,
     fadeDuration: 600,
     fitImagesInViewport: true,
     imageFadeDuration: 600,
     // maxWidth: 800,
-    // maxHeight: 600,
+    // maxHeight: 800,
     positionFromTop: 50,
     resizeDuration: 700,
     showImageNumberLabel: true,

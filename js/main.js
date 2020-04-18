@@ -189,10 +189,10 @@ function thirdColumnWhite() {
 function blackMobile() {
     var footer = document.getElementById("footer"); 
     var topBox = document.getElementById("firstColumn");
-    var margin = topBox.offsetHeight+(footer.offsetHeight*1.8); 
+    var margin = topBox.offsetHeight+(footer.offsetHeight*2); 
     var calc = window.innerHeight-margin;
     var x = document.getElementById("thirdColumn");
-    x.style.height = calc;
+    x.style.height = "100vh";
     x.style.color = 'white';
     x.style.backgroundColor = "black";
     var y = document.getElementById("footer");
