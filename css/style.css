@@ -9,11 +9,13 @@
     }
 
     .titoloprogetto{
-        font-weight: 900;
+        font-weight: 500;
+        margin-bottom: -5px;
     }
 
     .sottotitoloprogetto{
-        font-weight: 500;
+        font-weight: 300;
+        text-decoration: underline;
     }
 
     .immagineprogetto{
@@ -24,6 +26,10 @@
         font-weight: 300;
         margin-top: 15px;
         padding-right: 15px;
+    }
+
+    .titolieinfo{
+        font-weight: 500;
     }
   
   /* Larghezza minima (SMARTPHONE) */
